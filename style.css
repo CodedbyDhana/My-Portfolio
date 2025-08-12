@@ -1003,6 +1003,20 @@ textarea {
     }
 }
 
+/* CSS for Mobile */
+@media (max-width: 360px){
+.about-sub-heading{
+    font-size: 20px;
+    width: 200px;
+}
+.zoo-text-bg {
+        position: relative;
+        margin-top: -50px;
+        margin-left: -50px;
+        width: 250px;
+    }
+}
+
 
 /* CSS for Mobile */
 @media (max-width: 768px) {
