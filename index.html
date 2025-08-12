@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="icon" href="./asset/image/profile-image.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/c8035dea26.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- Landing Page -->
+        <div>
+            <div class="landing-background">
+                <img class="landing-bg" src="./asset/image/landing-bg-image.jpg" alt="image">
+            </div>
+        </div>
+        <div class="nav-bar">
+            <label for="nav-check">
+                <img src="./asset/image/menu-burger.png" alt="" class="menu-btn">
+            </label>
+        </div>
+
+        <input type="checkbox" id="theme-toggle" hidden>
+        <div class="theme-toggle-wrapper">
+            <label class="theme-btn" for="theme-toggle">
+                <span class="sun-icon">🌙</span>
+                <span class="moon-icon">☀️</span>
+            </label>
+        </div>
+        <div class="site">
+
+            <!-- Profile Card -->
+            <div class="side-verticle-card container">
+                <aside class=" ">
+                    <div class="verticle-card">
+                        <img class="profile-image" src="./asset/image/profile-image.png" alt="image">
+                        <h1>Dhanasekar B</h1>
+                        <p>Web Developer</p>
+                        <div class="contact">
+                            <p class="phone">Phone:+91 96559 89667</p>
+                            <p class="mail">dhanasekar.b.dev@gmail.com</p>
+                        </div>
+                        <div class="icon">
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/CodedbyDhana"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/dhanasekar-b-dev/" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.behance.net/dhana3"><i class="fa-brands fa-behance"></i></a>
+                        </div>
+                        <a href="./asset/files/Dhanasekar.pdf" download="">
+                            <button class="cv-download" type="button"><span class="left-arrow"><i
+                                        class="fa-solid fa-down-long"></i></span><span class="btn-text"> Download My
+                                    CV</span>
+                                <span class="right-arrow"><i class="fa-solid fa-down-long"></i></span></button>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+
+            <main>
+                <!-- Navigation bar -->
+                <div class="nav-section">
+
+                    <input type="checkbox" id="nav-check">
+
+
+                    <div class="nav-bar resp_nav-bar">
+
+                        <ul>
+                            <span class="nav-close"><label for="nav-check"><img src="./asset/image/close-btn.png"
+                                        alt="close" class="close-icon"></label></span>
+                            <li class="list"><a href="#about" class="link">about</a></li>
+                            <li class="list"><a href="#resume" class="link">Resume</a></li>
+                            <li class="list"><a href="#my-work" class="link">Projects</a></li>
+                            <!-- <li class="list"><a href="#" class="link">My Blog</a></li> -->
+                            <li class="list"><a href="#contact" class="link">Contact</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div id="about">
+                    <h1></h1>
+                </div>
+                <div class="gap"></div>
+
+                <div class="up-btn">
+                    <a class="scroll-top" href="#top" aria-label="Back to top">
+                        <span class="scroll-top__icon">↑</span>
+                    </a>
+                </div>
+
+                <script>
+                    const update = () => {
+                        const p = window.scrollY / (document.body.scrollHeight - innerHeight);
+                        document.documentElement.style.setProperty('--progress', p);
+                    };
+                    update();                 // initial
+                    addEventListener('scroll', update, { passive: true });
+                </script>
+                <!-- About page -->
+                <section id="about1" class="my-about ">
+                    <h1 class="about-main-heading">About Me</h1>
+                    <h1 class="about-sub-heading">Design with purpose, Code with precision</h1>
+
+                    <div class="my-about-details">
+                        <p>
+                            I’m Dhanasekar, a creative UI/UX Designer and Web Developer passionate about building clean,
+                            responsive, and user-friendly websites.
+                        </p>
+                        <p>
+                            With a strong eye for design and solid front-end skills, I turn ideas into intuitive digital
+                            experiences
+                            that not only look great but work flawlessly.
+                        </p>
+                    </div>
+                    <h2 class="do-heading">What i do?</h2>
+                    <div class="card-container">
+                        <div class="first first-row">
+                            <div class="about-card">
+                                <h2 class="card-head"><span><i class="fa-brands fa-figma"></i></span><Span
+                                        class="card-head-text">Ui/Ux Design</Span></h2>
+                                <p class="card-para">Wireframes, prototypes, user flows, and design systems focused on
+                                    user
+                                    experience and visually appealing.</p>
+                            </div>
+
+                            <div class="about-card">
+                                <h2 class="card-head"><span><i class="fa-solid fa-code"></i></span><Span
+                                        class="card-head-text">Web Development</Span></h2>
+                                <p class="card-para">Responsive website Development using HTML, CSS,
+                                    JavaScript,Bootstrap,
+                                    and
+                                    modern frameworks.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="secont first-row">
+                            <div class="about-card">
+                                <h2 class="card-head"><span><i class="fa-solid fa-print"></i></span><Span
+                                        class="card-head-text">Fresh Design</Span></h2>
+                                <p class="card-para">Interfaces that work beautifully across all screen sizes Designing
+                                    for
+                                    all
+                                    screen sizes, ensuring accessibility and performance across devices.</p>
+                            </div>
+
+                            <div class="about-card">
+                                <h2 class="card-head"><span><i class="fa-solid fa-palette"></i></span>
+                                    <Span class="card-head-text">Redesign</Span>
+                                </h2>
+                                <p class="card-para">Updating and modernizing old websites to match today’s user
+                                    expectations
+                                    and design trendsmodern look and better performance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-count-container">
+                        <div id="resume">
+                            <h1></h1>
+                            <p></p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- My Resume page -->
+                <section id="resume1" class="my-about">
+                    <h1 class="about-main-heading">Education</h1>
+                    <h1 class="about-sub-heading">Academic Journey That Shaped My Skills</h1>
+
+                    <div class="my-about-details">
+                        <p>
+                            Graduated with a B.Sc. in Mathematics, where I developed strong analytical thinking.
+                            Later, I pursued my passion for UI/UX design and web development, blending logic with
+                            creativity.
+                        </p>
+                    </div>
+                    <h2 class="do-heading">Certified Knowledge</h2>
+                    <div class="card-container">
+                        <div class="first first-row">
+                            <div class="about-card edu-card">
+                                <div class="edu-head">
+                                    <div class="edu-left">
+                                        <h4 class="edu-cation">B.Sc Mathematics</h4>
+                                        <h2 class="edu-Academy">Alagappa University</h2>
+                                    </div>
+                                    <div class="edu-right">
+                                        <h2 class="edu-year">2010-2014</h2>
+                                    </div>
+                                </div>
+                                <p class="card-para edu-para">Built a strong foundation in logic and problem-solving
+                                    that
+                                    supports my
+                                    work in design and development.</p>
+                            </div>
+
+                            <div class="about-card edu-card">
+                                <div class="edu-head">
+                                    <div class="edu-left">
+                                        <h4 class="edu-cation">Graphic Design</h4>
+                                        <h2 class="edu-Academy">The Pixory </h2>
+                                    </div>
+                                    <div class="edu-right">
+                                        <h2 class="edu-year">2024</h2>
+                                    </div>
+                                </div>
+                                <p class="card-para edu-para">Crafted creative posters, logos, social media posts, and
+                                    brand
+                                    identities using Photoshop, and Illustrator.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="secont first-row">
+                            <div class="about-card edu-card">
+                                <div class="edu-head">
+                                    <div class="edu-left">
+                                        <h4 class="edu-cation">Ui/Ux Design</h4>
+                                        <h2 class="edu-Academy">Buff Creative Collage</h2>
+                                    </div>
+                                    <div class="edu-right">
+                                        <h2 class="edu-year">2024-2025</h2>
+                                    </div>
+                                </div>
+                                <p class="card-para edu-para">Design user-friendly interfaces, wireframes, and
+                                    prototypes
+                                    with
+                                    Figma, focusing on user behavior, needs.
+                                </p>
+                            </div>
+
+                            <div class="about-card edu-card">
+                                <div class="edu-head">
+                                    <div class="edu-left">
+                                        <h4 class="edu-cation">Web Devlopment</h4>
+                                        <h2 class="edu-Academy">Buff Creative Collage</h2>
+                                    </div>
+                                    <div class="edu-right">
+                                        <h2 class="edu-year">2025</h2>
+                                    </div>
+                                </div>
+                                <p class="card-para edu-para">Build responsive websites using HTML, CSS, Bootstrap,
+                                    JavaScript
+                                    with clean code and modern design.</p>
+                            </div>
+                        </div>
+                        <div class="skill-Container">
+                            <div class="design-skill">
+                                <form action="">
+                                    <h2>Design skill</h2>
+                                    <label for="figma" class="skill-figma">Figma</label>
+                                    <div class="box">
+                                        <input type="range" class="range" id="figma" name="figma" min="0" max="100"
+                                            value="95" onmousemove="rangeSlider(this.value)">
+                                        <span class="range-value" id="range-value">95</span>
+                                    </div>
+                                    <script>
+                                        function rangeSlider(value) {
+                                            document.getElementById('range-value').innerHTML = value;
+                                        }
+                                    </script>
+
+
+                                    <label for="xd" class="skill-xd">Adobe Xd</label>
+                                    <div class="box">
+                                        <input type="range" class="range" id="figma" name="figma" min="0" max="100"
+                                            value="90" onmousemove="rangeSlider1(this.value)">
+                                        <span class="range-value" id="xd-value">90</span>
+                                    </div>
+                                    <script>
+                                        function rangeSlider1(value) {
+                                            document.getElementById('xd-value').innerHTML = value;
+                                        }
+                                    </script>
+
+                                    <label for="marvel" class="skill-marvel">Marvel</label>
+                                    <div class="box">
+                                        <input type="range" class="range" id="figma" name="figma" min="0" max="100"
+                                            value="85" onmousemove="rangeSlider2(this.value)">
+                                        <span class="range-value" id="marvel-value">85</span>
+                                    </div>
+                                    <script>
+                                        function rangeSlider2(value) {
+                                            document.getElementById('marvel-value').innerHTML = value;
+                                        }
+                                    </script>
+
+                                    <label for="photoshop" class="skill-ps">Photoshop</label>
+                                    <div class="box">
+                                        <input type="range" class="range" id="figma" name="figma" min="0" max="100"
+                                            value="85" onmousemove="rangeSlider3(this.value)">
+                                        <span class="range-value" id="ps-value">85</span>
+                                    </div>
+                                    <script>
+                                        function rangeSlider3(value) {
+                                            document.getElementById('ps-value').innerHTML = value;
+                                        }
+                                    </script>
+
+
+                                    <label for="illustrator" class="skill-illustrator">Illustrator</label>
+                                    <div class="box">
+                                        <input type="range" class="range" id="figma" name="figma" min="0" max="100"
+                                            value="65" onmousemove="rangeSlider4(this.value)">
+                                        <span class="range-value" id="illus-value">65</span>
+                                    </div>
+                                    <script>
+                                        function rangeSlider4(value) {
+                                            document.getElementById('illus-value').innerHTML = value;
+                                        }
+                                    </script>
+
+                                    <label for="coreldraw" class="skill-coreldraw">Coreldraw</label>
+
+                                    <input type="range" class="range" id="figma" name="figma" min="0" max="100"
+                                        value="75" onmousemove="rangeSlider5(this.value)">
+                                    <span class="range-value" id="corel-value">75</span>
+                                    <script>
+                                        function rangeSlider5(value) {
+                                            document.getElementById('corel-value').innerHTML = value;
+                                        }
+                                    </script>
+                                </form>
+                            </div>
+
+
+                            <div class="design-skill">
+                                <form action="">
+                                    <h2>Development skill</h2>
+
+                                    <label for="html" class="skill-html">HTML5</label>
+                                    <input type="range" class="range" id="figma" name="figma" min="0" max="100"
+                                        value="95" onmousemove="rangeSlider6(this.value)">
+                                    <span class="range-value" id="html-value">95</span>
+                                    <script>
+                                        function rangeSlider6(value) {
+                                            document.getElementById('html-value').innerHTML = value;
+                                        }
+                                    </script>
+
+
+
+                                    <label for="xd" class="skill-xd">CSS3</label>
+                                    <input type="range" class="range" id="figma" name="figma" min="0" max="100"
+                                        value="85" onmousemove="rangeSlider7(this.value)">
+                                    <span class="range-value" id="css-value">85</span>
+                                    <script>
+                                        function rangeSlider7(value) {
+                                            document.getElementById('css-value').innerHTML = value;
+                                        }
+                                    </script>
+
+                                    <label for="marvel" class="skill-marvel">JavaScript</label>
+                                    <input type="range" class="range" id="figma" name="figma" min="0" max="100"
+                                        value="65" onmousemove="rangeSlider8(this.value)">
+                                    <span class="range-value" id="js-value">65</span>
+                                    <script>
+                                        function rangeSlider8(value) {
+                                            document.getElementById('js-value').innerHTML = value;
+                                        }
+                                    </script>
+
+                                    <label for="photoshop" class="skill-ps">Bootstrap</label>
+                                    <input type="range" class="range" id="figma" name="figma" min="0" max="100"
+                                        value="85" onmousemove="rangeSlider9(this.value)">
+                                    <span class="range-value" id="bs-value">85</span>
+                                    <script>
+                                        function rangeSlider9(value) {
+                                            document.getElementById('bs-value').innerHTML = value;
+                                        }
+                                    </script>
+
+                                    <label for="illustrator" class="skill-illustrator">React JS</label>
+                                    <input type="range" class="range" id="figma" name="figma" min="0" max="100"
+                                        value="65" onmousemove="rangeSlider10(this.value)">
+                                    <span class="range-value" id="react-value">65</span>
+                                    <script>
+                                        function rangeSlider10(value) {
+                                            document.getElementById('react-value').innerHTML = value;
+                                        }
+                                    </script>
+
+                                    <label for="coreldraw" class="skill-coreldraw">WordPress</label>
+                                    <input type="range" class="range" id="figma" name="figma" min="0" max="100"
+                                        value="85" onmousemove="rangeSlider11(this.value)">
+                                    <span class="range-value" id="wp-value">85</span>
+                                    <script>
+                                        function rangeSlider11(value) {
+                                            document.getElementById('wp-value').innerHTML = value;
+                                        }
+                                    </script>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div id="my-work"></div>
+                    </div>
+                </section>
+
+                <!-- My Work page -->
+                <section id="my-work1" class="my-about project-about">
+                    <h2 class="about-main-heading ">My Completed Work </h2>
+                    <h2 class="about-sub-heading work-sub-heading">From Concept to Completion – My Work in Action</h2>
+                    <div class="my-about-details">
+                        <p>
+                            A collection of websites, UI/UX designs, and web apps built using tools like Figma, HTML,
+                            CSS,
+                            and
+                            JavaScript — each crafted with a focus on usability, performance, and clean design.
+                        </p>
+                    </div>
+                    <div class="work-card farmzo-card">
+                        <div class="Work-detail"></div>
+                        <div class="tag">
+                            <div class="text-bg"></div>
+                            <h4 class="work-bg-head">Website-Ui Design</h4>
+                            <h4 class="edu-cation work-detail-heading">Website-Ui Design</h4>
+
+                        </div>
+                        <div class="web-img">
+                            <img class="work-img image1" src="./asset/image/farmzo.png" alt="">
+                        </div>
+                        <div class="web-img2">
+                            <img class="work-img image2" src="./asset/image/formzo-logo.png" alt="">
+                        </div>
+                        
+                        <div class="bottom-tag">
+                            <a href="https://www.figma.com/proto/a4TgIWaT4r1wsXSdoPVOw1/Chronicle?page-id=886%3A240&node-id=1178-123&viewport=399%2C524%2C0.02&t=sJR0wcSY3K3sAnEa-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1178%3A123"
+                                target="_blank">
+                                <button class="view-button" type="button"><img class="view-img"
+                                        src="./asset/image/view.png" alt="">
+                                    <img class="view-img1" src="./asset/image/witness.png" alt="">View More</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="work-card app-card">
+                        <div class="celebration-images">
+
+
+                            <div class="card">
+                                <div id="before" class="section">
+                                    <div class="texts">
+                                        <div class="bg-chronicle">Chronicle</div>
+                                        <div class="app-para">Where design meets function — Chronicle App UI</div>
+                                        <div></div>
+                                    </div>
+                                    <div class="images">
+                                        <img src="./asset/image/App_Screen.png" />
+                                        <!-- <img src="" />
+                                <img src="" /> -->
+                                    </div>
+
+                                    <button onclick="shootConfetti()"><span><i class="fa-solid fa-gift"></i> </span>
+                                        Click
+                                        Me</button>
+                                </div>
+
+                            </div>
+
+                            <div id="after" class="section hide">
+                                <div class="images res-images">
+                                    <img class="screen1" src="./asset/image/app-Home mini.png" />
+                                    <img class="screen1" src="./asset/image/app-Home All Vendorsrt.png" />
+                                    <img class="screen1" src="./asset/image/app-Invitation.png" />
+                                </div>
+                                <div class="texts">
+                                    <div></div>
+                                    <div class="buttom-text">Proud to turn ideas into real, usable design.</div>
+                                    <!-- <div></div> -->
+                                    <style>
+                                        .buttom-text {
+                                            animation: div 1s linear infinite;
+                                        }
+
+                                        @keyframes div {
+                                            from {
+                                                opacity: 1;
+                                            }
+
+                                            50% {
+                                                opacity: 0;
+                                            }
+
+                                            to {
+                                                opacity: 1;
+                                            }
+                                        }
+                                    </style>
+                                </div>
+                            </div>
+
+                            <script
+                                src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+                            <script>
+                                function shootConfetti() {
+                                    confetti({
+                                        particleCount: 150,
+                                        spread: 100,
+                                        origin: { y: 0.6 }
+                                    });
+                                    setTimeout(() => {
+                                        document.getElementById('before').classList.add('hide');
+                                        document.getElementById('after').classList.remove('hide');
+                                    }, 1000);
+                                }
+                            </script>
+                        </div>
+                    </div>
+                    <div class="work-card zoo-section">
+
+                        <div class="texts">
+                            <div class="bg-chronicle"></div>
+                            <div class="about-zoo">Giggle Zoo is dashboard to manage zoo activities, animals, and
+                                staff—all
+                                in
+                                one place</div>
+                            <div></div>
+                        </div>
+                        <img class="zoo-text-bg" src="./asset/image/zoo-hd-bg.png" alt="">
+                        <div class="zoo-container">
+                            <div class="zoo-card"></div>
+                            <div class="tiger"></div>
+                        </div>
+
+                        <a class="zoo-button "
+                            href="https://www.figma.com/proto/COuqrWqDZfm6a6gXxdvtHg/ZOO?page-id=44%3A151&node-id=638-6667&viewport=-3830%2C1636%2C0.38&t=CR7eB8p3RF72xwbc-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=194%3A16030"
+                            target="_blank">
+                            <button class="view-button zoo-view-button" type="button"><img class="view-img"
+                                    src="./asset/image/view.png" alt="">
+                                <img class="view-img1" src="./asset/image/witness.png" alt="">View More</button>
+                        </a>
+                    </div>
+                    <div id="contact"></div>
+                </section>
+
+                <!-- My Contact page -->
+                <section id="contact1" class="my-about">
+                    <h1 class="about-main-heading">Ping Me Anytime</h1>
+                    <h1 class="about-sub-heading contact-sub-heading">build something great, let’s connect!</h1>
+
+                    <div class="my-about-details">
+                        <p>
+                            Looking for a passionate designer & developer? I’m just a message away — ready to bring
+                            ideas to
+                            life and add value to your team.
+                        </p>
+                    </div>
+                    <form action="" class="box">
+                        <input type="text" id="your-name" class="contact-input input-align" name="your-name"
+                            placeholder="your name">
+                        <input type="text" id="your-email" class="contact-input" name="your-email"
+                            placeholder="your email">
+                        <input type="text" id="your-number" class="contact-input input-align" name="your-number"
+                            placeholder="Phone number">
+                        <input type="text" id="your-name" class="contact-input" name="your-subject"
+                            placeholder="subject">
+                        <textarea name="command" id="Command" placeholder="Your Message"></textarea>
+                        <button type="button" class="submit">Submit</button>
+                    </form>
+                </section>
+            </main>
+
+        </div>
+    </div>
+</body>
+
+</html>
